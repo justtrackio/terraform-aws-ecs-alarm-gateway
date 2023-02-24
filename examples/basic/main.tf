@@ -1,4 +1,4 @@
-module "path_success_rate" {
+module "example" {
   source = "../../"
 
   alarm_description      = "Alarm when path success rate drops below threshold"
