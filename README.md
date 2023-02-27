@@ -23,7 +23,7 @@
 
 | Name | Type |
 |------|------|
-| [aws_cloudwatch_metric_alarm.path_success_rate](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) | resource |
+| [aws_cloudwatch_metric_alarm.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) | resource |
 
 ## Inputs
 
@@ -52,15 +52,15 @@
 | <a name="input_period"></a> [period](#input\_period) | The period in seconds over which the specified statistic is applied | `number` | `60` | no |
 | <a name="input_regex_replace_chars"></a> [regex\_replace\_chars](#input\_regex\_replace\_chars) | Terraform regular expression (regex) string.<br>Characters matching the regex will be removed from the ID elements.<br>If not set, `"/[^a-zA-Z0-9-]/"` is used to remove all characters other than hyphens, letters and digits. | `string` | `null` | no |
 | <a name="input_stage"></a> [stage](#input\_stage) | ID element. Usually used to indicate role, e.g. 'prod', 'staging', 'source', 'build', 'test', 'deploy', 'release' | `string` | `null` | no |
-| <a name="input_success_rate_threshold"></a> [success\_rate\_threshold](#input\_success\_rate\_threshold) | Required percentage of successful requests | `number` | `99` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Additional tags (e.g. `{'BusinessUnit': 'XYZ'}`).<br>Neither the tag keys nor the tag values will be modified by this module. | `map(string)` | `{}` | no |
 | <a name="input_tenant"></a> [tenant](#input\_tenant) | ID element \_(Rarely used, not included by default)\_. A customer identifier, indicating who this instance of a resource is for | `string` | `null` | no |
+| <a name="input_threshold"></a> [threshold](#input\_threshold) | Required percentage of successful requests | `number` | `99` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_alarm_arn"></a> [alarm\_arn](#output\_alarm\_arn) | The ARN of the CloudWatch metric alarm |
-| <a name="output_alarm_id"></a> [alarm\_id](#output\_alarm\_id) | The ID of the CloudWatch metric alarm |
 | <a name="output_alarm_name"></a> [alarm\_name](#output\_alarm\_name) | The name of the CloudWatch metric alarm |
+| <a name="output_arn"></a> [arn](#output\_arn) | The ARN of the CloudWatch metric alarm |
+| <a name="output_id"></a> [id](#output\_id) | The ID of the CloudWatch metric alarm |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

@@ -33,7 +33,7 @@ variable "period" {
   description = "The period in seconds over which the specified statistic is applied"
 }
 
-variable "success_rate_threshold" {
+variable "threshold" {
   type        = number
   default     = 99
   description = "Required percentage of successful requests"

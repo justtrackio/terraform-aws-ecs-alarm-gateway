@@ -8,7 +8,7 @@ module "cloudwatch_label" {
   context = module.this.context
 }
 
-resource "aws_cloudwatch_metric_alarm" "path_success_rate" {
+resource "aws_cloudwatch_metric_alarm" "default" {
   count = module.this.enabled ? 1 : 0
 
   alarm_description   = var.alarm_description
@@ -16,7 +16,7 @@ resource "aws_cloudwatch_metric_alarm" "path_success_rate" {
   datapoints_to_alarm = var.datapoints_to_alarm
   comparison_operator = "LessThanThreshold"
   evaluation_periods  = var.evaluation_periods
-  threshold           = var.success_rate_threshold
+  threshold           = var.threshold
   treat_missing_data  = "notBreaching"
 
   metric_query {
