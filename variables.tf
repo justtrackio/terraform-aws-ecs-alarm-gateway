@@ -22,6 +22,14 @@ variable "evaluation_periods" {
   description = "The number of periods over which data is compared to the specified threshold"
 }
 
+variable "label_orders" {
+  type = object({
+    cloudwatch = optional(list(string))
+  })
+  default     = {}
+  description = "Overrides the `labels_order` for the different labels to modify ID elements appear in the `id`"
+}
+
 variable "path" {
   type        = string
   description = "Path for which success rate alarm should be created"
@@ -37,12 +45,4 @@ variable "threshold" {
   type        = number
   default     = 99
   description = "Required percentage of successful requests"
-}
-
-variable "label_orders" {
-  type = object({
-    cloudwatch = optional(list(string))
-  })
-  default     = {}
-  description = "Overrides the `labels_order` for the different labels to modify ID elements appear in the `id`"
 }
