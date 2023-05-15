@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/compare/v1.0.0...v1.0.1) (2023-05-15)
+
+
+### Bug Fixes
+
+* adjust_versions_variables_outputs ([#9](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/issues/9)) ([bc4c27b](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/commit/bc4c27ba170c10a7b08efa89d2456e647357435e))
+
 ## 1.0.0 (2023-02-28)
 
 
