@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/compare/v1.0.1...v1.1.0) (2023-09-07)
+
+
+### Features
+
+* add alarm topic arn convention ([#20](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/issues/20)) ([fce077d](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/commit/fce077de22ac4a90d3c0c826b849841a3bc71ab3))
+
 ## [1.0.1](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/compare/v1.0.0...v1.0.1) (2023-05-15)
 
 
