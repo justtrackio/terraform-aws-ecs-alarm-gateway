@@ -28,10 +28,12 @@ resource "aws_cloudwatch_metric_alarm" "default" {
     return_data = false
 
     metric {
-      metric_name = "ApiRequestCount"
+      metric_name = "HttpRequestCount"
       namespace   = module.cloudwatch_label.id
       dimensions = {
-        "path" = var.path
+        "Method"     = var.method
+        "Path"       = var.path
+        "ServerName" = var.server_name
       }
       period = var.period
       stat   = "Sum"
@@ -43,10 +45,12 @@ resource "aws_cloudwatch_metric_alarm" "default" {
     return_data = false
 
     metric {
-      metric_name = "ApiStatus5XX"
+      metric_name = "HttpStatus5XX"
       namespace   = module.cloudwatch_label.id
       dimensions = {
-        "path" = var.path
+        "Method"     = var.method
+        "Path"       = var.path
+        "ServerName" = var.server_name
       }
       period = var.period
       stat   = "Sum"

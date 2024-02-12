@@ -2,7 +2,9 @@ module "example" {
   source = "../../"
 
   alarm_description   = "Alarm when path success rate drops below threshold"
+  method              = "GET"
   path                = "/api/v1/users"
+  server_name         = "default"
   datapoints_to_alarm = 2
   evaluation_periods  = 2
   threshold           = 95
