@@ -30,15 +30,25 @@ variable "label_orders" {
   description = "Overrides the `labels_order` for the different labels to modify ID elements appear in the `id`"
 }
 
+variable "method" {
+  type        = string
+  description = "Http method of the handler for which success rate alarm should be created"
+}
+
 variable "path" {
   type        = string
-  description = "Path for which success rate alarm should be created"
+  description = "Path for which the success rate alarm should be created"
 }
 
 variable "period" {
   type        = number
   default     = 60
   description = "The period in seconds over which the specified statistic is applied"
+}
+
+variable "server_name" {
+  type        = string
+  description = "Name of the gosoline http server for which the alarm should get created"
 }
 
 variable "threshold" {
