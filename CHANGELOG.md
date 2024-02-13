@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/compare/v1.1.0...v1.2.0) (2024-02-13)
+
+
+### Features
+
+* added method and server name to gateway alarms; ([#34](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/issues/34)) ([f87cdbc](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/commit/f87cdbc9b0c5db4197ddf436c2c88de8485335d5))
+
 ## [1.1.0](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/compare/v1.0.1...v1.1.0) (2023-09-07)
 
 
