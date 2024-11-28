@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/compare/v1.3.0...v1.3.1) (2024-11-28)
+
+
+### Bug Fixes
+
+* add more alarm levels ([#62](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/issues/62)) ([e528e8f](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/commit/e528e8f26764d84f58b0f7a8dc6b9d45592a398b))
+
 ## [1.3.0](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/compare/v1.2.0...v1.3.0) (2024-11-15)
 
 
