@@ -1,19 +1,7 @@
 variable "alarm_description" {
-  type        = string
+  type        = any
   description = "The description for the alarm"
   default     = null
-}
-
-variable "alarm_priority_high" {
-  type        = string
-  description = "Whether to create a high priority alarm"
-  default     = "high"
-}
-
-variable "alarm_priority_warning" {
-  type        = string
-  description = "Whether to create a warning priority alarm"
-  default     = "warning"
 }
 
 variable "alarm_topic_arn" {
@@ -26,6 +14,12 @@ variable "datapoints_to_alarm" {
   type        = number
   default     = 3
   description = "The number of datapoints that must be breaching to trigger the alarm"
+}
+
+variable "alarm_levels" {
+  type        = list(string)
+  description = "List of alarm levels to enable (e.g., ['info', 'warning', 'high', 'critical'])"
+  default     = ["warning", "high"]
 }
 
 variable "evaluation_periods" {
