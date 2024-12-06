@@ -58,7 +58,7 @@ resource "aws_cloudwatch_metric_alarm" "default" {
     return_data = false
 
     metric {
-      metric_name = "HttpRequestCount"
+      metric_name = "HttpRequestCountPerRoute"
       namespace   = module.cloudwatch_label.id
       dimensions = {
         "Method"     = var.method
@@ -75,7 +75,7 @@ resource "aws_cloudwatch_metric_alarm" "default" {
     return_data = false
 
     metric {
-      metric_name = "HttpStatus5XX"
+      metric_name = "HttpStatus5XXPerRoute"
       namespace   = module.cloudwatch_label.id
       dimensions = {
         "Method"     = var.method
