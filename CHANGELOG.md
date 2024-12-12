@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/compare/v1.3.1...v1.4.0) (2024-12-12)
+
+
+### Features
+
+* gosoline metric adjustments ([#63](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/issues/63)) ([dec1290](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/commit/dec1290d68ba3c76a25b6088425e9c9e769bd341))
+
 ## [1.3.1](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/compare/v1.3.0...v1.3.1) (2024-11-28)
 
 
