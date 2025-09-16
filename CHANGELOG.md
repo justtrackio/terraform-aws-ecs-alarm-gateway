@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/compare/v1.4.0...v1.4.1) (2025-09-16)
+
+
+### Bug Fixes
+
+* alarm name crashes with other request methods; ([#77](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/issues/77)) ([8703f51](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/commit/8703f51bd6071b795a573dceed6511205820704c))
+
 ## [1.4.0](https://github.com/justtrackio/terraform-aws-ecs-alarm-gateway/compare/v1.3.1...v1.4.0) (2024-12-12)
 
 
