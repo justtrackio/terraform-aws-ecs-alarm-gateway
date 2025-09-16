@@ -46,7 +46,7 @@ resource "aws_cloudwatch_metric_alarm" "default" {
   alarm_description = jsonencode(merge({
     Priority = each.value.alarm_priority
   }, var.alarm_description))
-  alarm_name          = "${module.this.id}-${var.path}-success-rate-${each.value.alarm_priority}"
+  alarm_name          = "${module.this.id}-${var.server_name}-${var.method}-${var.path}-success-rate-${each.value.alarm_priority}"
   datapoints_to_alarm = each.value.datapoints_to_alarm
   comparison_operator = "LessThanThreshold"
   evaluation_periods  = each.value.evaluation_periods
